@@ -13,6 +13,11 @@
 		AE8A25FC28E8536D00DE45DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8A25FA28E8536D00DE45DB /* Main.storyboard */; };
 		AE8A25FE28E8536E00DE45DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE8A25FD28E8536E00DE45DB /* Assets.xcassets */; };
 		AE8A260128E8536E00DE45DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8A25FF28E8536E00DE45DB /* LaunchScreen.storyboard */; };
+		DDFF905728F02DE10067A724 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF905628F02DE10067A724 /* TabbarViewController.swift */; };
+		DDFF905928F080480067A724 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF905828F080480067A724 /* HomeViewController.swift */; };
+		DDFF905B28F086B90067A724 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF905A28F086B90067A724 /* AnimalViewController.swift */; };
+		DDFF905D28F099BA0067A724 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF905C28F099BA0067A724 /* BrowseViewController.swift */; };
+		DDFF905F28F0A6E10067A724 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF905E28F0A6E10067A724 /* LogoutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		AE8A25FD28E8536E00DE45DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE8A260028E8536E00DE45DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE8A260228E8536E00DE45DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDFF905628F02DE10067A724 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		DDFF905828F080480067A724 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DDFF905A28F086B90067A724 /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
+		DDFF905C28F099BA0067A724 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		DDFF905E28F0A6E10067A724 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				AE8A25FD28E8536E00DE45DB /* Assets.xcassets */,
 				AE8A25FF28E8536E00DE45DB /* LaunchScreen.storyboard */,
 				AE8A260228E8536E00DE45DB /* Info.plist */,
+				DDFF905628F02DE10067A724 /* TabbarViewController.swift */,
+				DDFF905828F080480067A724 /* HomeViewController.swift */,
+				DDFF905A28F086B90067A724 /* AnimalViewController.swift */,
+				DDFF905C28F099BA0067A724 /* BrowseViewController.swift */,
+				DDFF905E28F0A6E10067A724 /* LogoutViewController.swift */,
 			);
 			path = UIKitBasics;
 			sourceTree = "<group>";
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDFF905928F080480067A724 /* HomeViewController.swift in Sources */,
+				DDFF905728F02DE10067A724 /* TabbarViewController.swift in Sources */,
 				AE8A25F928E8536D00DE45DB /* ViewController.swift in Sources */,
 				AE8A25F528E8536D00DE45DB /* AppDelegate.swift in Sources */,
+				DDFF905B28F086B90067A724 /* AnimalViewController.swift in Sources */,
 				AE8A25F728E8536D00DE45DB /* SceneDelegate.swift in Sources */,
+				DDFF905F28F0A6E10067A724 /* LogoutViewController.swift in Sources */,
+				DDFF905D28F099BA0067A724 /* BrowseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
