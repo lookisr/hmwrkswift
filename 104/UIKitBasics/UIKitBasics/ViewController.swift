@@ -8,93 +8,55 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var name: String = "First vc"
-
     @IBOutlet private var loginField: UITextField!
     @IBOutlet private var passwordField: UITextField!
     @IBOutlet private var submitButton: UIButton!
-
-    @IBAction private func submitTap() {
-        print("Submitting with \(loginField.text ?? ""): \(passwordField.text ?? "")")
-
-        let anotherVC: ViewController = UIStoryboard(name: "Main", bundle: nil)
-            .instantiateViewController(identifier: "ViewController")
-        if name == "First vc" {
-            anotherVC.name = "Second vc"
-            navigationController?.pushViewController(anotherVC, animated: true)
-        } else {
-            let navigationController = UINavigationController(
-                rootViewController: anotherVC
-            )
-            navigationController.modalPresentationStyle = .fullScreen
-            present(navigationController, animated: true)
-        }
-    }
-
-    @objc private func closeTap() {
-        if navigationController?.viewControllers.count ?? 1 == 1 {
-            // presentingViewController - контроллер, презентующий текущий VC
-            // presentedViewController - контроллер, который был показан из текущего VC
-            presentingViewController?.dismiss(animated: true)
-        } else {
-            navigationController?.popViewController(animated: true)
-        }
-    }
-
-    func debug(_ function: StaticString = #function) {
-        print("\(name): \(function)")
-    }
-
+    @IBOutlet private var logLabel: UILabel!
+    @IBOutlet private var pasLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationItem.leftBarButtonItem = UIBarButtonItem(
-            title: "Close", style: .plain, target: self,
-            action: #selector(closeTap)
-        )
-        debug()
+        setConstraints()
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-        debug()
+    
+    @IBAction func enterTapped(_ sender: Any) {
+        if loginField.text == "admin" && passwordField.text == "admin" {
+            guard let vc = storyboard?.instantiateViewController(withIdentifier: "TabbarViewController") else { return }
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true)
+            let defs = UserDefaults.standard
+            defs.setValue(loginField.text, forKey: "name")
+        }
+        else{
+            let alert = UIAlertController(title: "", message: "Wrond username or password", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
+    private func setConstraints() {
+        let stackViewTF = UIStackView()
+        stackViewTF.axis = .vertical
+        stackViewTF.spacing = 20
+        view.addSubview(stackViewTF)
+        stackViewTF.translatesAutoresizingMaskIntoConstraints = false
+        loginField.translatesAutoresizingMaskIntoConstraints = false
+        passwordField.translatesAutoresizingMaskIntoConstraints = false
+        logLabel.translatesAutoresizingMaskIntoConstraints = false
+        pasLabel.translatesAutoresizingMaskIntoConstraints = false
+        stackViewTF.addArrangedSubview(logLabel)
+        stackViewTF.addArrangedSubview(loginField)
+        stackViewTF.addArrangedSubview(pasLabel)
+        stackViewTF.addArrangedSubview(passwordField)
+        NSLayoutConstraint.activate([
+            stackViewTF.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            stackViewTF.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
+            stackViewTF.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -40),
+            stackViewTF.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        submitButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            submitButton.topAnchor.constraint(equalTo: stackViewTF.bottomAnchor, constant: 20),
+            submitButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        debug()
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-
-        debug()
-    }
-
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-
-        debug()
-    }
-
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-
-        debug()
-    }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-
-        debug()
-    }
-
-    override func viewSafeAreaInsetsDidChange() {
-        super.viewSafeAreaInsetsDidChange()
-
-        debug()
-    }
+        }
 }
-
