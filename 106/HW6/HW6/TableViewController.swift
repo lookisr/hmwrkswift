@@ -54,7 +54,6 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate {
             cell.contentConfiguration = value
             cell.selectionStyle = .none
             return cell
-            
         default:
             guard
                 let cell = tableView
@@ -65,7 +64,6 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate {
                 fatalError("Could not deque cell of type \(CarsViewTableCell.self)")
             }
             let car = listOfCars.CarsList[indexPath.row]
-            print(car)
             cell.set(car: car)
             return cell
         }

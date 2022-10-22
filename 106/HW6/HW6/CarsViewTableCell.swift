@@ -19,7 +19,7 @@ class CarsViewTableCell: UITableViewCell {
     private let brandLabel : UILabel = .init()
     private let modelLabel : UILabel = .init()
     private let powerLabel: UILabel = .init()
-
+    private let bodyLabel: UILabel = .init()
     private func setup() {
         brandLabel.font = .boldSystemFont(ofSize: 20)
         modelLabel.font = .boldSystemFont(ofSize: 20)
@@ -34,6 +34,7 @@ class CarsViewTableCell: UITableViewCell {
         stackView.alignment = .leading
         contentView.addSubview(stackView)
         contentView.addSubview(powerLabel)
+        contentView.addSubview(bodyLabel)
         stackView.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
@@ -50,12 +51,19 @@ class CarsViewTableCell: UITableViewCell {
             powerLabel.centerYAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -35),
             powerLabel.widthAnchor.constraint(equalToConstant: 180),
         ])
-        
+        bodyLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+           bodyLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 30),
+           bodyLabel.centerYAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -35),
+           bodyLabel.widthAnchor.constraint(equalToConstant: 180),
+
+        ])
     }
     func set(car: Car) {
         brandLabel.text = car.brand
         modelLabel.text = car.model
         powerLabel.text = String(car.power)
+        bodyLabel.text = "Body: \(car.bodyStyle)"
     }
     func didSelect(car: Car, at indexPath: IndexPath) {
         print(
@@ -64,8 +72,6 @@ class CarsViewTableCell: UITableViewCell {
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }
