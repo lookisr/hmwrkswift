@@ -9,37 +9,23 @@
 /* Begin PBXBuildFile section */
 		DD1FFA412903168A002C7316 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1FFA402903168A002C7316 /* AppDelegate.swift */; };
 		DD1FFA432903168A002C7316 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1FFA422903168A002C7316 /* SceneDelegate.swift */; };
-		DD1FFA452903168A002C7316 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1FFA442903168A002C7316 /* ViewController.swift */; };
 		DD1FFA4A2903168B002C7316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD1FFA492903168B002C7316 /* Assets.xcassets */; };
 		DD1FFA4D2903168B002C7316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1FFA4B2903168B002C7316 /* LaunchScreen.storyboard */; };
 		DD1FFA5529031697002C7316 /* Cars.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1FFA5429031697002C7316 /* Cars.swift */; };
 		DD1FFA57290316AA002C7316 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1FFA56290316AA002C7316 /* TableViewController.swift */; };
 		DD1FFA5929031CD4002C7316 /* CarsViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1FFA5829031CD4002C7316 /* CarsViewTableCell.swift */; };
-		DD1FFA8329033324002C7316 /* bmw.png in Resources */ = {isa = PBXBuildFile; fileRef = DD1FFA7C29033324002C7316 /* bmw.png */; };
-		DD1FFA8529033324002C7316 /* mercedes.png in Resources */ = {isa = PBXBuildFile; fileRef = DD1FFA7E29033324002C7316 /* mercedes.png */; };
-		DD1FFA8629033324002C7316 /* honda.png in Resources */ = {isa = PBXBuildFile; fileRef = DD1FFA7F29033324002C7316 /* honda.png */; };
-		DD1FFA8829033324002C7316 /* nissan.png in Resources */ = {isa = PBXBuildFile; fileRef = DD1FFA8129033324002C7316 /* nissan.png */; };
-		DD1FFA8929033324002C7316 /* lamborghini.png in Resources */ = {isa = PBXBuildFile; fileRef = DD1FFA8229033324002C7316 /* lamborghini.png */; };
-		DD1FFA8B290333AA002C7316 /* audi.png in Resources */ = {isa = PBXBuildFile; fileRef = DD1FFA8A290333AA002C7316 /* audi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD1FFA3D2903168A002C7316 /* HW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1FFA402903168A002C7316 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD1FFA422903168A002C7316 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD1FFA442903168A002C7316 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD1FFA492903168B002C7316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD1FFA4C2903168B002C7316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD1FFA5429031697002C7316 /* Cars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cars.swift; sourceTree = "<group>"; };
 		DD1FFA56290316AA002C7316 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		DD1FFA5829031CD4002C7316 /* CarsViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewTableCell.swift; sourceTree = "<group>"; };
 		DD1FFA5A29032BAA002C7316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD1FFA7C29033324002C7316 /* bmw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bmw.png; path = ../../../../../../Downloads/bmw.png; sourceTree = "<group>"; };
-		DD1FFA7E29033324002C7316 /* mercedes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mercedes.png; path = ../../../../../../Downloads/mercedes.png; sourceTree = "<group>"; };
-		DD1FFA7F29033324002C7316 /* honda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = honda.png; path = ../../../../../../Downloads/honda.png; sourceTree = "<group>"; };
-		DD1FFA8129033324002C7316 /* nissan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nissan.png; path = ../../../../../../Downloads/nissan.png; sourceTree = "<group>"; };
-		DD1FFA8229033324002C7316 /* lamborghini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lamborghini.png; path = ../../../../../../Downloads/lamborghini.png; sourceTree = "<group>"; };
-		DD1FFA8A290333AA002C7316 /* audi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = audi.png; path = ../../../../../../Downloads/audi.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,14 +60,7 @@
 			children = (
 				DD1FFA402903168A002C7316 /* AppDelegate.swift */,
 				DD1FFA422903168A002C7316 /* SceneDelegate.swift */,
-				DD1FFA442903168A002C7316 /* ViewController.swift */,
 				DD1FFA492903168B002C7316 /* Assets.xcassets */,
-				DD1FFA7C29033324002C7316 /* bmw.png */,
-				DD1FFA7F29033324002C7316 /* honda.png */,
-				DD1FFA8229033324002C7316 /* lamborghini.png */,
-				DD1FFA7E29033324002C7316 /* mercedes.png */,
-				DD1FFA8A290333AA002C7316 /* audi.png */,
-				DD1FFA8129033324002C7316 /* nissan.png */,
 				DD1FFA4B2903168B002C7316 /* LaunchScreen.storyboard */,
 				DD1FFA5429031697002C7316 /* Cars.swift */,
 				DD1FFA56290316AA002C7316 /* TableViewController.swift */,
@@ -149,13 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD1FFA8929033324002C7316 /* lamborghini.png in Resources */,
-				DD1FFA8829033324002C7316 /* nissan.png in Resources */,
-				DD1FFA8329033324002C7316 /* bmw.png in Resources */,
 				DD1FFA4D2903168B002C7316 /* LaunchScreen.storyboard in Resources */,
-				DD1FFA8529033324002C7316 /* mercedes.png in Resources */,
-				DD1FFA8629033324002C7316 /* honda.png in Resources */,
-				DD1FFA8B290333AA002C7316 /* audi.png in Resources */,
 				DD1FFA4A2903168B002C7316 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,7 +140,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD1FFA452903168A002C7316 /* ViewController.swift in Sources */,
 				DD1FFA412903168A002C7316 /* AppDelegate.swift in Sources */,
 				DD1FFA5929031CD4002C7316 /* CarsViewTableCell.swift in Sources */,
 				DD1FFA5529031697002C7316 /* Cars.swift in Sources */,
